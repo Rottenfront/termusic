@@ -116,6 +116,7 @@ impl Rpc {
                     client
                         .set_activity(
                             activity::Activity::new()
+                                .activity_type(activity::ActivityType::Listening)
                                 .assets(assets)
                                 .timestamps(timestamp)
                                 .state(&artist)
@@ -131,6 +132,7 @@ impl Rpc {
                     client
                         .set_activity(
                             activity::Activity::new()
+                                .activity_type(activity::ActivityType::Listening)
                                 .assets(assets)
                                 .state(&artist)
                                 .details(format!("{}: Paused", title.as_str()).as_str()),
@@ -160,6 +162,7 @@ impl Rpc {
                     client
                         .set_activity(
                             activity::Activity::new()
+                                .activity_type(activity::ActivityType::Listening)
                                 .assets(assets)
                                 .timestamps(timestamp)
                                 .state(&artist)
@@ -178,6 +181,7 @@ impl Rpc {
                     client
                         .set_activity(
                             activity::Activity::new()
+                                .activity_type(activity::ActivityType::Listening)
                                 .assets(assets)
                                 .state(&artist)
                                 .details("Stopped"),
