@@ -31,6 +31,7 @@
 
           buildInputs = with pkgs; [
             alsa-lib
+            sqlite
             dbus
           ];
 
@@ -86,7 +87,6 @@
               dbus
               ffmpeg
               yt-dlp
-              sqlite
             ];
           };
         }
